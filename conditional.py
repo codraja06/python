@@ -42,19 +42,20 @@ chemistry=int(input("Enter the chemistry mark :"))
 tamil=int(input("Enter the tamil mark :"))
 english=int(input("Enter the english mark :"))
 computer=int(input("Enter the computer mark :"))
-per=maths+physics+chemistry+tamil+english+computer/6
+per=maths+physics+chemistry+tamil+english+computer
+perc=per/6
 
-print(f"percentage  {float(per)}")
+print(f"percentage :{perc:.2f}")
 
-if per > 90:
+if perc > 90:
     print("A+ grade")
-elif per > 80:
+elif perc > 80:
     print("A grade")
-elif per >70:
+elif perc >70:
     print("B+ grade")
-elif per >60:
+elif perc >60:
     print("B grade")
-elif per >50:
+elif perc >50:
     print("C grade")
 else:
     print("U grade")
