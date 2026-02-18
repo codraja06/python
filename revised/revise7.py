@@ -1,0 +1,6 @@
+i=input()
+sp=i.split()
+jo="".join(sp)
+so=sorted(jo)
+yu="".join(so)
+print(yu[::-1])
